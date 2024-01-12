@@ -19,6 +19,7 @@ function moveToRight(){
         couter=0;
         operacion=0;
         slider.style.transform = `translate(-${operacion}%)`;
+        
     }
     else{
         couter++;
@@ -73,3 +74,49 @@ function moveToLeft(){
 //    video1.play();
 //});
 //
+
+const btnLeft1 = document.querySelector(".btn-left1"),
+    btnRight1 = document.querySelector(".btn-right1"),
+    slider1 = document.querySelector("#slider1"),
+    sliderSection1 = document.querySelectorAll(".slider-section1");
+
+
+
+
+btnRight1.addEventListener("click", e => moveToRight1())
+btnLeft1.addEventListener("click", e => moveToLeft1())
+
+let ope =0;
+    cou= 0;
+    widthVideo1= 100 / sliderSection1.length;
+
+
+function moveToRight1(){
+    if (cou >= sliderSection1.length-1){
+        cou=0;
+        ope=0;
+        slider1.style.transform = `translate(-${ope}%)`;
+    }
+    else{
+        cou++;
+
+        ope= ope + widthVideo1;
+        slider1.style.transform = `translate(-${ope}%)`;
+    }
+    
+
+}
+
+function moveToLeft1(){
+    cou--;
+    if(cou < 0){
+        cou= sliderSection1.length-1;
+        ope=widthVideo1 *(sliderSection1.length-1);
+        slider1.style.transform = `translate(-${ope}%)`;
+    }else{
+        ope= ope - widthVideo1;
+        slider1.style.transform = `translate(-${ope}%)`
+    }
+
+    
+}
