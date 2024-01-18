@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+
+
 body{
     padding: 0;
     margin: 0;
@@ -18,25 +22,83 @@ body{
 }
 .header-bodega{
     position: relative;
+    display: flex;
     width: 100%;
     height: 25%;
-    background-color: rgba(0, 0, 255, 0.363);
+
 
 }
 .body-bodega{
     position: relative;
     width: 100%;
     height: 75%;
-    background-color: rgba(0, 255, 255, 0.397);
+   
 }
 .header-logo{
-    width: 151px;
-    height: 161px;
+    width: 131px;
+    height: 141px;
     padding-top: 36px;
     padding-left: 66px;
 
+
+}
+.header-menu{
+    display: flex;
 }
 .img-logo{
     width: 100%;
     height: 100%;
+}
+
+
+.lista-menu{
+
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.lista .link-lista{
+    display: inline-block;
+    padding: 30px 40px;
+}
+.link{
+    color: #ffff;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 22px;
+}
+
+.header-busqueda{
+    
+    display: flex;
+    padding: 40px 10px;
+    
+}
+.img-busqueda{
+    position: absolute;
+}
+.txt-busqueda{
+    border: none;
+    background: none;
+    width: 190px;
+    height: 18px;
+    outline: none;
+    position: relative;
+    margin-left: 10px;
+    margin-top: 8px;
+    
+}
+.icon-busqueda{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: none;
+    border: none;
+
+    position: relative;
+}
+.img-icon-busqueda{
+    background-size: cover;
+    
 }
