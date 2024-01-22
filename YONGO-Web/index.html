@@ -12,30 +12,44 @@
 <body>
     <div class="contenedor-header"><!--contiene toda la primera parte de la pagina encabezado y cuerpo de esta misma -->
         <img class="fondo-bodega" src="recursos/img/bodega fondo.png"><!--todo el fonde del contenedor-->
-        <div class="header-bodega">
+        <div class="contenedor-general-header">
+    
             <div class="header-logo">
-                <img class="img-logo" src="recursos/img/HEAD/Logo.png">
+              <img class="Logo" src="recursos/img/HEAD/Logo.png" width="125px">
             </div>
-            <div class="header-menu">
-                <nav class="lista-menu">
-                    <ul class="lista">
-                        <li class="link-lista"><a class="link" href="#">Conócenos</a></li>
-                        <li class="link-lista"><a class="link" href="#">Servicios</a></li>
-                        <li class="link-lista"><a class="link" href="#">Productos</a></li>
-                        <li class="link-lista"><a class="link" href="#">Contáctanos</a></li>
-                    </ul>
-                </nav>
+            <div class="menu">
+              <nav class="navbar">
+                <ul>
+                    <li><a href="#">Conócenos</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contáctanos</a></li>
+                </ul>
+            </nav>
             </div>
-            <div class="header-busqueda">
-                <div class="contenedor-busqueda">
-                    <img class="img-busqueda" src="recursos/img/HEAD/barra.png">
+            
+            <Div class="header-busqueda"><!--violeta-->
+          
+              <div class="derecha-div"><!--marron-->
+                  <div class="header-busqueda-txt"><!--azul-->
+                    <img class="barra-img" src="recursos/img/HEAD/barra.png">
                     <input class="txt-busqueda" type="text">
-                    <button class="icon-busqueda"><img class="img-icon-busqueda" src="recursos/img/HEAD/Icono buscador.png"></button>
-                </div>
-            </div>
+                    <img class="icon-busqueda" src="recursos/img/HEAD/Icono buscador.png" alt="Buscar">
+                  </div>
+                  <div class="header-idioma"><!--verde-->
+                    <div class="toggle-button" onclick="toggleButton()">
+                      <div class="toggle-ball"></div>
+                  </div>
+                  </div>
+              </div>
+            </Div>
         </div>
+
         <div class="body-bodega">
-            <div class="">
+            <div class="body-titulo">
+                <h2 class="titulo">ABASTECEMOS TU</h2>
+            </div>
+            <div class="body-dos">
 
             </div>
         </div>

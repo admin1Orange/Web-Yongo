@@ -1,67 +1,25 @@
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
 
-
-body{
-    padding: 0;
-    margin: 0;
-}
-.Contenedor-header {
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-  
-
-}
 .fondo-bodega{
     
     width: 100%;
     height: 100%;
     position: absolute;
 }
-.header-bodega{
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: 25%;
-
-
-}
-.body-bodega{
-    position: relative;
-    width: 100%;
-    height: 75%;
-   
-}
-.header-logo{
-    width: 131px;
-    height: 141px;
-    padding-top: 36px;
-    padding-left: 66px;
-
-
-}
-.header-menu{
-    display: flex;
-}
-.img-logo{
+.Contenedor-header {
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
 }
+body{
+    padding: 0;
+    margin: 0;
 
-
-.lista-menu{
-
-    align-items: center;
-    justify-content: space-between;
-    
 }
-.lista .link-lista{
-    display: inline-block;
-    padding: 30px 40px;
-}
-.link{
+
+a {
     color: #ffff;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
@@ -69,39 +27,187 @@ body{
     font-size: 22px;
 }
 
-.header-busqueda{
-    
+/*nuevo*/
+.contenedor-general-header{
     display: flex;
-    padding: 40px 10px;
-    
+    width: 100%;
 }
-.img-busqueda{
-    position: absolute;
-}
-.txt-busqueda{
-    border: none;
-    background: none;
-    width: 190px;
-    height: 18px;
-    outline: none;
+.header-logo{
+    margin-left: 40px;
+    margin-top: 25px;
     position: relative;
-    margin-left: 10px;
-    margin-top: 8px;
-    
+    justify-content: right;
+
+}
+
+.header-busqueda{
+    margin-right: 20px;
+    margin-top: 15px;
+    width: 70%;
+    display: flex;
+    justify-content: right;
+
+}
+.derecha-div{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 310px;
+    height: 60px;
+    margin-right: 50px;
+}
+.header-busqueda-txt{
+    width: 245px;
+    height: 34px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.header-idioma{
+
+    width: 60px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 45px;
+
+}
+.barra-img{
+    width: 200px;
+    height: 28px;
+    position: absolute;
+    opacity: 0.9;
 }
 .icon-busqueda{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: none;
-    border: none;
-
     position: relative;
+    margin-right: 10px;
+ 
 }
-.img-icon-busqueda{
-    background-size: cover;
-    
-}
-.contenedor-busqueda{
+.txt-busqueda{
+    width: 159px;
+    height: 20px;
+    margin-right: 6px;
+    position: relative;
+    border: none;
+    background: none;
+    outline: none;
 
 }
+
+/* Estilos para el botón de alternancia */
+.toggle-button {
+
+    width: 49px;
+    height: 25px;
+    background-color: #ffffffcc;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    position: relative;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Estilos para la bolita (botón) dentro del botón de alternancia */
+  .toggle-ball {
+    margin-top: 1px;
+    margin-left: 1px;
+    margin-right: 1px;
+    width: 23px;
+    height: 22px;
+    background-color: #5e5c5c;
+    border-radius: 50%;
+    position: relative;
+    
+    transform: translateY();
+    transition: transform 0.3s ease;
+  }
+  
+  /* Estilos para el botón de alternancia en estado activado */
+  .toggle-button.active {
+    background-color: #4CAF50;
+    margin-right: 1px;
+  }
+  
+  /* Estilos para la bolita (botón) en estado activado */
+  .toggle-button.active .toggle-ball {
+    background-color: #fff;
+    
+    transform: translateX(23px); /* Cambia la posición de la bolita cuando está activada */
+  }
+  
+
+/*estilos de navbar*/
+.menu{
+    margin-left: 70px;
+    margin-top: 25px;
+    position: relative;
+    width: 50%;
+}
+
+.navbar {
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    flex: 1;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 970px) {
+    .navbar a {
+        text-align: left;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        height: 200px;
+    }
+}
+
+/*----------------------body-bodega-------------------------------------------------*/
+.body-bodega{
+    display: flex;
+    width: 100%;
+}
+.body-titulo{
+    margin-top: 0;
+    position: relative;
+    width: 100%;
+    background-color: #4caf4fab;
+    text-align: center;
+
+}
+.titulo{
+    margin-top: 0;
+    color: red;
+}
+
+
+
+
+
+
+
+
+
